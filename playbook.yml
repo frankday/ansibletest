@@ -1,6 +1,6 @@
 ---
 
-- hosts: 172.20.7.10
+- hosts: test
 
   tasks:
 
