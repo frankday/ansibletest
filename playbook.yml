@@ -11,3 +11,7 @@
   - name: print today's date
     debug: var=result.stdout
   
+  - name: create an empty file
+    file:
+      path: /tmp/ansible.tmp.txt
+      state: touch
