@@ -1,0 +1,13 @@
+---
+
+- hosts: localhost
+
+  tasks:
+
+  - name: Just complete as valid YAML please
+    command: date +%F
+    register: result
+    
+  - name: print today's date
+    debug: var=result.stdout
+  
