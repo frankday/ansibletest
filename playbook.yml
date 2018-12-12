@@ -1,6 +1,6 @@
 ---
 
-- hosts: local_only_local_only
+- hosts: test
 
   tasks:
 
