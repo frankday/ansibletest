@@ -40,8 +40,7 @@
       # Get first system disk        
       disk: '{{ ansible_facts.disks|selectattr("system_disk")|first }}'
       disksize_gib: "{{ (disk.size/1024|pow(3))|round|int }} GiB"
-      disksize_gb:  "{{ (disk.size/1000|pow(3))|round|int }} GB"  # returns "240 GB" (value in GB)
-      
+          
   - name: Output disk serial number
     debug:
        var: ansible_facts.disks[0].serial_number
